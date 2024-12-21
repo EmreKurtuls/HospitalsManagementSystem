@@ -1,0 +1,272 @@
+/* style.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background */
+body {
+    background: url('/Images/hospitalphoto.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header Section */
+.header {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 65px;
+    border-radius: 4px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+
+.login {
+    position: relative;
+    margin-left: auto;
+}
+
+.login-image {
+    width: 40px; 
+    height: 40px; 
+    object-fit: cover;
+    filter: brightness(0) invert(1); 
+}
+
+
+/* Main Content */
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 50px 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings */
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #4CAF50;
+}
+
+h2,
+.section-heading {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 20px;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.awards-list li {
+    margin-bottom: 10px;
+}
+
+/* Team Member */
+.team-member {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #e0e0e0;
+}
+
+/* Contact Information */
+.contact-info {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.contact-info p {
+    font-size: 20px;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* Map */
+.map {
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional Info Section */
+.info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: left;
+    color: #e0e0e0;
+    overflow: hidden;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-top: 1px solid #4CAF50;
+}
